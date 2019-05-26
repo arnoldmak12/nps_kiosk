@@ -41,7 +41,7 @@ class Toolbar extends React.Component {
                     alt="Logo"
                     // style={ {marginLeft: "15px"}}
                     style={ {marginLeft: "15px"}}
-                    // style= {{width: "20px"}}
+                    style= {{width: "400px"}}
 
                   />
                 </div>
@@ -74,66 +74,6 @@ class Toolbar extends React.Component {
                         this.setState({
                           activeSidebar:
                             this.state.activeSidebar !== "Search" ? "Search" : ""
-                        });
-                      }}
-                    />
-                  </div>
-                </li>
-
-                <li>
-                  <div className="toolbar__icon">
-                    <ToolbarButton
-                      title={"Companies"}
-                      icon={faBuilding}
-                      isMini={this.state.isMini}
-                      sidebarComponent={<CompaniesSpecificToolbar />}
-                      showSidebar={this.state.activeSidebar === "Companies"}
-                      onClick={() => {
-                        this.setState({
-                          activeSidebar:
-                            this.state.activeSidebar !== "Companies"
-                              ? "Companies"
-                              : ""
-                        });
-                      }}
-                    />
-                  </div>
-                </li>
-
-                <li>
-                  <div className="toolbar__icon">
-                    <ToolbarButton
-                      title={"Projects"}
-                      icon={faFolder}
-                      isMini={this.state.isMini}
-                      sidebarComponent={<ProjectsSpecificToolbar />}
-                      showSidebar={this.state.activeSidebar === "Projects"}
-                      onClick={() => {
-                        this.setState({
-                          activeSidebar:
-                            this.state.activeSidebar !== "Projects"
-                              ? "Projects"
-                              : ""
-                        });
-                      }}
-                    />
-                  </div>
-                </li>
-
-                <li>
-                  <div className="toolbar__icon">
-                    <ToolbarButton
-                      title={"Contacts"}
-                      icon={faAddressBook}
-                      isMini={this.state.isMini}
-                      sidebarComponent={<ContactsSpecificToolbar />}
-                      showSidebar={this.state.activeSidebar === "Contacts"}
-                      onClick={() => {
-                        this.setState({
-                          activeSidebar:
-                            this.state.activeSidebar !== "Contacts"
-                              ? "Contacts"
-                              : ""
                         });
                       }}
                     />

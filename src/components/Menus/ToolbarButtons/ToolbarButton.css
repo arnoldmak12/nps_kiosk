@@ -1,7 +1,7 @@
 .toggle-button {
   display: block;
   justify-content: space-around;
-  
+  color: white;
   height: 100px; 
   width: 100%; 
   background: transparent;
@@ -14,6 +14,19 @@
   text-align: left;
   
   
+}
+
+.fa-search{
+  color: white;
+  size: x;
+}
+
+.fa-chevron-right{
+  color: white;
+}
+
+.fa-chevron-left{
+  color: white;
 }
 
 .toggle-button-text{
