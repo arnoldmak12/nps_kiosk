@@ -1,7 +1,7 @@
 import React from 'react';
 import '../Toolbar.css';
 
-const UsersSpecificToolbar = props => {
+const SearchsSpecificToolbar = props => {
     return (
         <div className="specificToolbar">
 
@@ -13,7 +13,7 @@ const UsersSpecificToolbar = props => {
                         <ul>
 
                             <li>
-                                <p>- View Users</p>
+                                <p>- View Searchs</p>
                             </li>
 
 
@@ -29,4 +29,4 @@ const UsersSpecificToolbar = props => {
 
 }
 
-export default UsersSpecificToolbar;
+export default SearchsSpecificToolbar;

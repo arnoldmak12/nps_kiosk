@@ -4,17 +4,17 @@ import ToolbarButton from "../ToolbarButtons/ToolbarButton";
 import CompaniesSpecificToolbar from "./SpecficToolbar/CompaniesSpecficToolbar";
 import ContactsSpecificToolbar from "./SpecficToolbar/ContactsSpecficToolbar";
 import ProjectsSpecificToolbar from "./SpecficToolbar/ProjectsSpecficToolbar";
-import UsersSpecificToolbar from "./SpecficToolbar/UsersSpecficToolbar";
+import SearchSpecificToolbar from "./SpecficToolbar/SearchSpecficToolbar";
 import {
-  faUser,
+  faSearch,
   faBuilding,
   faFolder,
   faAddressBook,
   faChevronRight,
   faChevronLeft
 } from "@fortawesome/free-solid-svg-icons";
-import largeLogo from "./Icons/LogoWithName.png";
-import smallLogo from "./Icons/LogoNoName.png";
+import largeLogo from "./Icons/largeLogo.png";
+import smallLogo from "./Icons/smallLogo.png";
 import "./Toolbar.css";
 
 class Toolbar extends React.Component {
@@ -36,11 +36,11 @@ class Toolbar extends React.Component {
             <div className="toolbar_navigation-items">
               <ul>
                 <div className="toolbar__icon">
-                  {/* <img
+                  <img
                     src={this.state.isMini ? smallLogo : largeLogo}
                     alt="Logo"
                     style={{ marginLeft: "15px" }}
-                  /> */}
+                  />
                 </div>
 
                 <li>
@@ -62,15 +62,15 @@ class Toolbar extends React.Component {
                 <li>
                   <div className="toolbar__icon">
                     <ToolbarButton
-                      title={"Users"}
-                      icon={faUser}
+                      title={"Search"}
+                      icon={faSearch}
                       isMini={this.state.isMini}
-                      sidebarComponent={<UsersSpecificToolbar />}
-                      showSidebar={this.state.activeSidebar === "User"}
+                      sidebarComponent={<SearchSpecificToolbar />}
+                      showSidebar={this.state.activeSidebar === "Search"}
                       onClick={() => {
                         this.setState({
                           activeSidebar:
-                            this.state.activeSidebar !== "User" ? "User" : ""
+                            this.state.activeSidebar !== "Search" ? "Search" : ""
                         });
                       }}
                     />
