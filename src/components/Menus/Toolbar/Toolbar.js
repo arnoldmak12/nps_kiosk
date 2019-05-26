@@ -41,7 +41,7 @@ class Toolbar extends React.Component {
                     alt="Logo"
                     // style={ {marginLeft: "15px"}}
                     style={ {marginLeft: "15px"}}
-                    style= {{width: "20px"}}
+                    // style= {{width: "20px"}}
 
                   />
                 </div>
