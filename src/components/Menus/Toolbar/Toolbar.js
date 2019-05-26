@@ -39,7 +39,10 @@ class Toolbar extends React.Component {
                   <img
                     src={this.state.isMini ? smallLogo : largeLogo}
                     alt="Logo"
-                    style={{ marginLeft: "15px" }}
+                    // style={ {marginLeft: "15px"}}
+                    style={ {marginLeft: "15px"}}
+                    style= {{width: "20px"}}
+
                   />
                 </div>
 
