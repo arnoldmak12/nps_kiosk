@@ -1,0 +1,47 @@
+.toggle-button {
+  display: block;
+  justify-content: space-around;
+  height: 80px;
+  /* width: auto; */
+  width: 100%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  /* padding: 50x 50px; */
+  margin-bottom: -30px;
+  margin-top: 15px;
+  /* box-sizing: border-box; */
+  list-style: none;
+  align-content: center;
+  text-align: left;
+  /* margin-left: -5px; */
+}
+
+.toggle-button:hover {
+  background: linear-gradient(120deg, rgb(102, 102, 102) 0%, hsl(0, 0%, 65%) 6000%);
+}
+
+/* .toggle-button-arrow_right {
+  font-size: 60px;
+  color: rgb(75, 190, 221);
+
+  margin-left: 7px;
+}
+
+.toggle-button-arrow_left {
+  font-size: 60px;
+  color: rgb(75, 190, 221);
+  display: inline-block;
+
+  margin-left: 7px;
+} */
+
+.toggle-button-text {
+  font-size: 60px;
+  color: rgb(75, 190, 221);
+  display: inline-block;
+}
+
+.toggle-button:focus {
+  outline: none;
+}
