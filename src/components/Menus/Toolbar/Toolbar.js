@@ -1,15 +1,13 @@
 import React from "react";
 import ToolbarButton from "../ToolbarButtons/ToolbarButton";
 
-import CompaniesSpecificToolbar from "./SpecficToolbar/CompaniesSpecficToolbar";
-import ContactsSpecificToolbar from "./SpecficToolbar/ContactsSpecficToolbar";
-import ProjectsSpecificToolbar from "./SpecficToolbar/ProjectsSpecficToolbar";
-import SearchSpecificToolbar from "./SpecficToolbar/SearchSpecficToolbar";
+import Search from "./SpecficPages/Search";
+import Home from "./SpecficPages/Home";
 import {
   faSearch,
   faBuilding,
   faFolder,
-  faAddressBook,
+  faHome,
   faChevronRight,
   faChevronLeft
 } from "@fortawesome/free-solid-svg-icons";
@@ -65,10 +63,28 @@ class Toolbar extends React.Component {
                 <li>
                   <div className="toolbar__icon">
                     <ToolbarButton
+                      title={"Home"}
+                      icon={faHome}
+                      isMini={this.state.isMini}
+                      sidebarComponent={<Home />}
+                      showSidebar={this.state.activeSidebar === "Home"}
+                      onClick={() => {
+                        this.setState({
+                          activeSidebar:
+                            this.state.activeSidebar !== "Home" ? "Home" : ""
+                        });
+                      }}
+                    />
+                  </div>
+                </li>
+
+                <li>
+                  <div className="toolbar__icon">
+                    <ToolbarButton
                       title={"Search"}
                       icon={faSearch}
                       isMini={this.state.isMini}
-                      sidebarComponent={<SearchSpecificToolbar />}
+                      sidebarComponent={<Search />}
                       showSidebar={this.state.activeSidebar === "Search"}
                       onClick={() => {
                         this.setState({
