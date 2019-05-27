@@ -1,0 +1,32 @@
+form.search-form {
+    /* position: fixed; */
+    z-Index: 10;
+}
+
+input.search-input {
+    left: 550px;
+    position: absolute;
+    background: transparent;
+    width: 880px;
+    height: 80px;
+    font-Size: 50px;
+    color: white;
+    font-Family: "Rockwell Extra Bold", "Rockwell Bold", monospace;
+    font-Weight: 70;
+    border-radius: 15px;
+}
+
+input.search-input::placeholder {
+    color: white;
+}
+
+button.search-submit {
+    left: 1355px;
+    width: 80px;
+    position: absolute;
+    height: 86px;
+    background:  #1e6ff0;
+    border-radius: 15px;
+    border: none;
+    /* align-content: center; */
+}

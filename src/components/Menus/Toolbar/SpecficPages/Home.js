@@ -1,28 +1,36 @@
 import React from 'react';
-import '../Toolbar.css';
+
+const homeStyleHeader = {
+    position: 'fixed',
+    zIndex: '10',
+    top: '20%',
+    left: '30%',
+    fontSize: '170px',
+    color: 'white',
+    fontFamily: '"Rockwell Extra Bold", "Rockwell Bold", monospace',
+    fontStyle: 'italic',
+    fontWeight: '70'
+  }
+
+  const homeStyleSubHeader = {
+    position: 'fixed',
+    zIndex: '10',
+    top: '50%',
+    left: '29%',
+    fontSize: '60px',
+    color: 'white',
+    fontFamily: '"Rockwell Extra Bold", "Rockwell Bold", monospace',
+    fontStyle: 'italic',
+    fontWeight: '70'
+  }
 
 const SearchsSpecificToolbar = props => {
     return (
-        <div className="specificToolbar">
+        <div className="home-page">
 
-            <header className="specific_toolbar">
+            <h1 style={homeStyleHeader}>Welcome!</h1>
+            <h2 style={homeStyleSubHeader}>Made By: Arnold Makarov</h2>
 
-                <nav className="toolbar__navigation">
-
-                    <div className="toolbar_navigation-items">
-                        <ul>
-
-                            <li>
-                                <p>- View Searchs</p>
-                            </li>
-
-
-                        </ul>
-                    </div>
-                </nav>
-
-
-            </header>
         </div>
     )
 

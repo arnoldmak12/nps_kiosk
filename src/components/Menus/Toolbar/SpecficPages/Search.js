@@ -1,32 +1,38 @@
 import React from 'react';
-import '../Toolbar.css';
+import "./Search.css"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
-const SearchsSpecificToolbar = props => {
+class Search extends React.Component{
+    handleSignIn(e) {
+    // e.preventDefault()
+    // let username = this.refs.username.value
+    // let password = this.refs.password.value
+    // this.props.onSignIn(username, password)
+  }
+  render(){
+
     return (
-        <div className="specificToolbar">
+        <div className="search-page">
 
-            <header className="specific_toolbar">
+            <form class="search-form" type="Login" onSubmit={this.handleSignIn.bind(this)}>
 
-                <nav className="toolbar__navigation">
+                <input className="search-input" type="text" ref="search" placeholder="Search"/>
+                
+                <button className="search-submit" type="submit">
+                <FontAwesomeIcon size="5x" icon={faSearch} />
+                </button>
 
-                    <div className="toolbar_navigation-items">
-                        <ul>
+            </form>
 
-                            <li>
-                                <p>- View Searchs</p>
-                            </li>
-
-
-                        </ul>
-                    </div>
-                </nav>
-
-
-            </header>
         </div>
     )
+  }
 
 
 }
 
-export default SearchsSpecificToolbar;
+
+
+
+export default Search;
