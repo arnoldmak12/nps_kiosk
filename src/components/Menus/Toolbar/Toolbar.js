@@ -1,6 +1,5 @@
 import React from "react";
 import ToolbarButton from "../ToolbarButtons/ToolbarButton";
-
 import Search from "./SpecficPages/Search";
 import Home from "./SpecficPages/Home";
 import {

@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Switch, Route, Link, Redirect, withRouter } fr
 import './App.css';
 import HomePage from './components/HomePage'
 
+import BackgroundSlideShow from 'react-background-slideshow';
+
 function App() {
   return (
     <Router>
