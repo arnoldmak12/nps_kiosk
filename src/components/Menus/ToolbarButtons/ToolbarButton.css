@@ -12,8 +12,6 @@
   list-style: none;
   align-content: center;
   text-align: left;
-  
-  
 }
 
 .fa-search{
@@ -40,26 +38,9 @@
  margin-top: 20px;
 }
 
-
-
 .toggle-button:hover {
   background: linear-gradient(120deg, rgb(102, 102, 102) 0%, hsl(0, 0%, 65%) 6000%);
 }
-
-/* .toggle-button-arrow_right {
-  font-size: 60px;
-  color: rgb(75, 190, 221);
-
-  margin-left: 7px;
-}
-
-.toggle-button-arrow_left {
-  font-size: 60px;
-  color: rgb(75, 190, 221);
-  display: inline-block;
-
-  margin-left: 7px;
-} */
 
 .toggle-button-text {
   font-size: 60px;

@@ -4,8 +4,6 @@ import Search from "./SpecficPages/Search";
 import Home from "./SpecficPages/Home";
 import {
   faSearch,
-  faBuilding,
-  faFolder,
   faHome,
   faChevronRight,
   faChevronLeft
