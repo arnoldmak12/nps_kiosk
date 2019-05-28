@@ -5,7 +5,12 @@ import BackgroundSlideShow from 'react-background-slideshow';
 import grassField from '../slideShowPics/grassField.jpg';
 import regMoun from '../slideShowPics/regMoun.jpg';
 import snowMoun from '../slideShowPics/snowMoun.jpg';
-import waterfall from '../slideShowPics/waterfall.jpg';
+import desert from '../slideShowPics/desert.jpg';
+import desert2 from '../slideShowPics/desert2.jpg';
+import flowers from '../slideShowPics/flowers.jpg';
+import lake from '../slideShowPics/lake.jpg';
+import moun2 from '../slideShowPics/moun2.jpg';
+
 import { relative } from "path";
 
 class HomePage extends React.Component {
@@ -31,7 +36,7 @@ class HomePage extends React.Component {
       <div>
 
         <div style={backgroundStyle}>
-          <BackgroundSlideShow images={[grassField, regMoun, snowMoun, waterfall]} />
+          <BackgroundSlideShow images={[grassField, regMoun, snowMoun, lake, desert, flowers, moun2, desert2]} />
         </div>
 
         <div style={homePageStyle}>

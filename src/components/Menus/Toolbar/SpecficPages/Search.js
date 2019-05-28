@@ -15,7 +15,7 @@ class Search extends React.Component{
     return (
         <div className="search-page">
 
-            <form class="search-form" type="Login" onSubmit={this.handleSignIn.bind(this)}>
+            <form class="search-form" onSubmit={this.handleSignIn.bind(this)}>
 
                 <input className="search-input" type="text" ref="search" placeholder="Search"/>
                 
