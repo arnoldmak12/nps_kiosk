@@ -2,37 +2,43 @@ import React from 'react';
 import "./Search.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import Park from './Park';
 
-class Search extends React.Component{
-    handleSignIn(e) {
-    // e.preventDefault()
-    // let username = this.refs.username.value
-    // let password = this.refs.password.value
-    // this.props.onSignIn(username, password)
+class Search extends React.Component {
+  constructor() {
+    super();
+    this.state = { clicked: false };
   }
-  render(){
+
+  handleClick(evt) {
+    evt.preventDefault();
+    this.setState({
+      clicked: !this.state.clicked,
+    });
+  }
+
+  render() {
+
+    let component = <Park />
 
     return (
-        <div className="search-page">
+      <div className="search-page">
 
-            <form class="search-form" onSubmit={this.handleSignIn.bind(this)}>
+        <form class="search-form">
 
-                <input className="search-input" type="text" ref="search" placeholder="Search"/>
-                
-                <button className="search-submit" type="submit">
-                <FontAwesomeIcon size="5x" icon={faSearch} />
-                </button>
+          <input className="search-input" type="text" ref="search" placeholder="Search" />
 
-            </form>
+          <button className="search-submit" type="submit" onClick={this.handleClick.bind(this)}>
+            <FontAwesomeIcon size="5x" icon={faSearch} />
+          </button>
+          {this.state.clicked && component}
+        </form>
 
-        </div>
+
+
+      </div>
     )
   }
-
-
 }
-
-
-
 
 export default Search;

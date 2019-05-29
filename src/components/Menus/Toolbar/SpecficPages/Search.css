@@ -29,5 +29,6 @@ button.search-submit {
     background:  #1e6ff0;
     border-radius: 15px;
     border: none;
+    cursor: pointer;
     /* align-content: center; */
 }
