@@ -1,11 +1,33 @@
+.search-page {
+    position: relative;
+    margin-left: 380px;
+    height: 100px;
+    margin-top: -20px;
+    /* background: red; */
+    width: 1400px;
+}
+
 form.search-form {
     /* position: fixed; */
     z-Index: 10;
+    margin-top: -80px;
+}
+
+.type-select {
+    color: red;
+}
+
+.state-select {
+    /* margin-left: 300px; */
+    /* position: fixed; */
+    height: 80px;
+    margin-left: 500px;
+    margin-top: -85px;
 }
 
 input.search-input {
-    left: 550px;
-    position: absolute;
+    margin-left: 610px;
+    position: fixed;
     background: transparent;
     width: 880px;
     height: 80px;
@@ -14,15 +36,16 @@ input.search-input {
     font-Family: "Rockwell Extra Bold", "Rockwell Bold", monospace;
     font-Weight: 70;
     border-radius: 15px;
-    /* border-width: 1.25px; */
+    border: 1.5px solid white;
 }
+
 
 input.search-input::placeholder {
     color: white;
 }
 
 button.search-submit {
-    left: 1355px;
+    left: 1415px;
     width: 80px;
     position: absolute;
     height: 86px;

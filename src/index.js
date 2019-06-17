@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Switch, Route, Link, Redirect, withRouter } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 // import { ConnectedRouter } from 'connected-react-router';
 
 // import configureStore, { history } from './store';
 import './index.css';
 import HomePage from './components/HomePage'
-import Park from "./components/Menus/Toolbar/SpecficPages/Park";
+import Results from "./components/Menus/Toolbar/SpecficPages/Results";
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
@@ -16,10 +16,10 @@ ReactDOM.render(
 
             <HomePage />
 
-            {/* <Switch>
+            <Switch>
                 <Route exact path="/" component={HomePage} />
-                <Route path="/park" component={Park} />
-            </Switch> */}
+                {/* <Route path="/results" component={Results} /> */}
+            </Switch>
             {/* </ConnectedRouter> */}
         </div>
     </Router>

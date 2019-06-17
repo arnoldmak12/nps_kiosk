@@ -1,9 +1,9 @@
 .toolbar {
     position: fixed;
-    width: 410px;
+    width: 380px;
     background: black;
     height: 100%;
-    margin-left: -5px;
+    margin-left: -8px;
   }
   
   .mini_toolbar {
@@ -11,36 +11,44 @@
     width: 90px;
     background: black;
     height: 100%;
-    margin-left: -5px;
+    margin-left: -8px;
   }
 
   .toolbar__icon {
-    color: red;
     text-decoration: none;
     float: none;
     list-style: none;
     display: inline-block;  
     align-content: center;
-    width: 100%;    
+    width: 100%;   
+    margin-left: -28px;
   }
 
-  .toolbar__icon p {
+  .toolbar__logo {
+    text-decoration: none;
+    float: none;
+    list-style: none;
+    display: inline-block;  
+    align-content: center;
+    width: 100%;   
+    margin-left: -35px;
+    
+  }
+
+  p.toolbar__icon {
     float: none;
   }
 
-  .toolbar__icon p p{
+  p.title{
     float: right;
     color: white;
-    margin-top: 5px;
-    margin-left: 35px;
+    margin-top: 20px;
+    margin-left: 30px;
     font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
-    font-size: 46px;
+    font-size: 35px;
   }
   
   .toolbar_navigation-items ul {
     list-style: none;
     display: block;
-   
-    margin-left: -35px;
-    margin-top: 30px;
   }

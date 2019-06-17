@@ -1,0 +1,30 @@
+.select-form {
+  /* margin-left: 200px; */
+}
+
+.label {
+  color: white;
+  font-Size: 40px;
+}
+
+.options {
+    background: transparent;
+    /* width: 100px; */
+    height: 85px;
+    font-Size: 50px;
+    color: white;
+    font-Family: "Rockwell Extra Bold", "Rockwell Bold", monospace;
+    font-Weight: 70;
+    border-radius: 15px;
+    border-width: 1.5px;
+    border-color: white;
+}    
+
+option {
+  color: blue;
+  max-height: 100px;
+}
+
+.test {
+color: rgb(0, 0, 0);
+}

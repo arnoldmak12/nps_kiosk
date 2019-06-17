@@ -6,7 +6,7 @@ import {
   faSearch,
   faHome,
   faChevronRight,
-  faChevronLeft
+  faChevronLeft,
 } from "@fortawesome/free-solid-svg-icons";
 import largeLogo from "./Icons/largeLogo.png";
 import smallLogo from "./Icons/smallLogo.png";
@@ -17,7 +17,8 @@ class Toolbar extends React.Component {
     super();
     this.state = {
       isMini: true,
-      activeSidebar: ""
+      activeSidebar: "",
+      inSearch: false,
     };
   }
 
@@ -30,14 +31,11 @@ class Toolbar extends React.Component {
             <div className="spacer" />
             <div className="toolbar_navigation-items">
               <ul>
-                <div className="toolbar__icon">
+                <div className="toolbar__logo">
                   <img
                     src={this.state.isMini ? smallLogo : largeLogo}
                     alt="Logo"
-                    // style={ {marginLeft: "15px"}}
-                    style={ {marginLeft: "15px"}}
-                    style= {{width: "400px"}}
-
+                    style= {{width: "360px"}}
                   />
                 </div>
 
@@ -81,17 +79,20 @@ class Toolbar extends React.Component {
                       title={"Search"}
                       icon={faSearch}
                       isMini={this.state.isMini}
-                      sidebarComponent={<Search />}
+                      sidebarComponent={<Search />}                      
                       showSidebar={this.state.activeSidebar === "Search"}
                       onClick={() => {
                         this.setState({
                           activeSidebar:
-                            this.state.activeSidebar !== "Search" ? "Search" : ""
+                            this.state.activeSidebar !== "Search" ? "Search" : "",
+                            inSearch: !this.state.inSearch,
                         });
                       }}
                     />
                   </div>
                 </li>
+
+
               </ul>
             </div>
           </nav>

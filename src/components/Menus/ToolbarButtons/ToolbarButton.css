@@ -2,8 +2,7 @@
   display: block;
   justify-content: space-around;
   color: white;
-  height: 100px; 
-  width: 100%; 
+  /* width: 100%;  */
   background: transparent;
   border: none;
   cursor: pointer;
@@ -12,16 +11,19 @@
   list-style: none;
   align-content: center;
   text-align: left;
+  height: 100px;
 }
 
 .fa-search{
   color: white;
-  size: x;
 }
 
 .fa-home{
   color: white;
-  size: x;
+}
+
+.fa-campground{
+  color: white;
 }
 
 .fa-chevron-right{
@@ -35,15 +37,16 @@
 .toggle-button-text{
   /* display: inline-block; */
  /* align-content: center; */
- margin-top: 20px;
+ margin-top: 15px;
 }
 
 .toggle-button:hover {
   background: linear-gradient(120deg, rgb(102, 102, 102) 0%, hsl(0, 0%, 65%) 6000%);
+  border-radius: 25px;
 }
 
 .toggle-button-text {
-  font-size: 60px;
+  font-size: 55px;
   color: rgb(75, 190, 221);
   display: inline-block;
 }

@@ -15,7 +15,7 @@ class ToolbarButton extends React.Component {
       component = null;
     }
 
-    if (this.props.title == "Collapse"){
+    if (this.props.title === "Collapse"){
       chevR = {
         marginLeft: '10px'
       };
@@ -27,12 +27,12 @@ class ToolbarButton extends React.Component {
         <button className="toggle-button" onClick={this.handleClick.bind(this)}>
           {!this.props.isMini ? (
             <p className="toggle-button-text">
-              <FontAwesomeIcon icon={this.props.icon} />
-              <p>{this.props.title}</p>
+              <FontAwesomeIcon icon={this.props.icon} size="xs"/>
+              <p className="title">{this.props.title}</p>
             </p>
           ) : (
             <p className="toggle-button-text">
-              <FontAwesomeIcon icon={this.props.icon} style={chevR}/>
+              <FontAwesomeIcon icon={this.props.icon} style={chevR} size="xs"/>
             </p>
           )}
         </button>
