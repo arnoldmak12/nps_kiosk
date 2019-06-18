@@ -36,12 +36,6 @@ class ToolbarButton extends React.Component {
             </p>
           )}
         </button>
-        {/* {this.props.isMini ? (
-           <div style={{ marginLeft: "90px" }}>{component}</div>
-        ) : (
-          <div style={{ marginLeft: "410px" }}>{component}</div>
-
-        )} */}
 
         {component}
        

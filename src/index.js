@@ -6,7 +6,6 @@ import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 // import configureStore, { history } from './store';
 import './index.css';
 import HomePage from './components/HomePage'
-import Results from "./components/Menus/Toolbar/SpecficPages/Results";
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(

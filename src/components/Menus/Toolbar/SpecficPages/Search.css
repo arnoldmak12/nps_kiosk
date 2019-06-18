@@ -1,8 +1,8 @@
 .search-page {
-    position: relative;
+    position: fixed;
     margin-left: 380px;
     height: 100px;
-    margin-top: -20px;
+    margin-top: -350px;
     /* background: red; */
     width: 1400px;
 }

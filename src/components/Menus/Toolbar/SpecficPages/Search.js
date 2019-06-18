@@ -3,13 +3,12 @@ import "./Search.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import Results from './Results';
-import { Redirect } from 'react-router-dom';
 import Select from '../../../../components/Select';
 
 class Search extends React.Component {
   constructor() {
     super();
-    this.state = { clicked: false, search: '', state: '', type: '' };
+    this.state = { clicked: false, search: '', state: '', type: '' , refresh: false};
   }
 
   handleSearchChange = (event) => {
@@ -20,10 +19,17 @@ class Search extends React.Component {
 
   handleClick(evt) {
     evt.preventDefault();
-    this.setState({
-      clicked: !this.state.clicked,
-    });
 
+    if(this.state.clicked){
+     this.setState({
+      refresh: true,
+    });
+    }
+
+    this.setState({
+      clicked: true,
+    });
+    
   }
 
   render() {
@@ -89,7 +95,7 @@ class Search extends React.Component {
             <FontAwesomeIcon size="5x" icon={faSearch} />
           </button>
 
-          {this.state.clicked && <Results search={this.state.search} type={this.state.type} state={this.state.state}/> && <Redirect to="/results" />}
+          {this.state.clicked && <Results search={this.state.search} type={this.state.type} state={this.state.state} refresh={this.state.refresh} />}
 
         </form>
 

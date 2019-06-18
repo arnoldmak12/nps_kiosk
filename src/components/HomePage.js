@@ -1,7 +1,6 @@
 import React from "react";
 import Toolbar from "./Menus/Toolbar/Toolbar";
-import BackgroundSlideShow from 'react-background-slideshow';
-
+import BackgroundSlider from 'react-background-slider'
 import grassField from '../slideShowPics/grassField.jpg';
 import regMoun from '../slideShowPics/regMoun.jpg';
 import snowMoun from '../slideShowPics/snowMoun.jpg';
@@ -12,7 +11,7 @@ import lake from '../slideShowPics/lake.jpg';
 import moun2 from '../slideShowPics/moun2.jpg';
 import { relative } from "path";
 
-import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Results from './Menus/Toolbar/SpecficPages/Results';
 
 class HomePage extends React.Component {
@@ -37,8 +36,9 @@ class HomePage extends React.Component {
         <Router>
           <div>
             <div style={backgroundStyle}>
-              <BackgroundSlideShow images={[grassField, regMoun, snowMoun, lake, desert, flowers, moun2, desert2]} />
-              {/* <div className='temp' style={{background: 'blue', zIndex: '-10', position: 'relative', marginTop: '-8px', height: '1000px'}}></div> */}
+              <BackgroundSlider
+                images={[grassField, regMoun, snowMoun, lake, desert, flowers, moun2, desert2]}
+                duration={12} transition={4} />
             </div>
 
             <div style={homePageStyle}>

@@ -1,5 +1,16 @@
 .park-page {
   position: absolute;
   background: red;
-  width: 200px;
+  margin-top: 110px;
+  width: 1500px;
+  height: 780px;;
+  overflow-y: scroll;
+}
+
+.park-page-loading {
+  position: absolute;
+  background: transparent;
+  margin-top: 400px;
+  margin-left: 600px;
+  
 }
