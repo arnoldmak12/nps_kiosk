@@ -1,0 +1,7 @@
+.campground-page {
+  position: fixed;
+  background: red;
+  width: 200px;
+  height: 200px;
+  margin-left: -8px;
+}

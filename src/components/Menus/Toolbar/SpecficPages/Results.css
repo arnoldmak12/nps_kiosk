@@ -1,16 +1,43 @@
 .park-page {
   position: absolute;
-  background: red;
-  margin-top: 110px;
+  background: transparent;
+  text-shadow: -.75px 0 black, 0 .75px black, .75px 0 black, 0 -.75px black;
+  color: white;
+  margin-top: 130px;
   width: 1500px;
-  height: 780px;;
+  height: 760px;;
   overflow-y: scroll;
 }
 
 .park-page-loading {
   position: absolute;
   background: transparent;
-  margin-top: 400px;
+  margin-top: 350px;
   margin-left: 600px;
   
+}
+
+li.result-entry {
+  padding-left: 20px;
+  padding-right: 50px; 
+  padding-bottom: 3px;
+}
+
+li.result-entry a{
+  color: white;
+  text-decoration: none; 
+}
+
+li.result-entry a:hover{
+  color: white; 
+  text-decoration: underline; 
+}
+
+h2.result-header {
+  font-size: 30px;
+}
+
+p.result-description {
+  margin-top: -15px;
+  font-size: 22px;
 }

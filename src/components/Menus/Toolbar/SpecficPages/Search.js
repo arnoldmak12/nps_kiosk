@@ -8,7 +8,7 @@ import Select from '../../../../components/Select';
 class Search extends React.Component {
   constructor() {
     super();
-    this.state = { clicked: false, search: '', state: '', type: '' , refresh: false};
+    this.state = { clicked: false, search: '', state: '', type: '', refresh: false };
   }
 
   handleSearchChange = (event) => {
@@ -16,20 +16,20 @@ class Search extends React.Component {
     this.setState({ search: search })
   }
 
-
   handleClick(evt) {
     evt.preventDefault();
 
-    if(this.state.clicked){
-     this.setState({
-      refresh: true,
-    });
+    if (this.state.clicked) {
+      this.setState({
+        refresh: true,
+      });
+      console.log('click');
     }
 
     this.setState({
       clicked: true,
     });
-    
+
   }
 
   render() {
@@ -37,21 +37,31 @@ class Search extends React.Component {
     return (
       <div className="search-page">
 
-<div >
+        <div >
           <Select
-          className="type-select"
+            className="type-select"
             value={this.state.type}
             onChange={value => {
-              if(value === '---------------'){
-                this.setState({ type: 'Parks' });
+              if (value === 'Lesson Plans') {
+                this.setState({ type: 'LessonPlans' });
+              }
+              else if (value === 'News Releases') {
+                this.setState({ type: 'NewsReleases' });
+              }
+              else if (value === 'Visitor Centers') {
+                this.setState({ type: 'VisitorCenters' });
               }
               else {
                 this.setState({ type: value });
               }
-              
-            }}
+              if (this.state.clicked) {
+                this.setState({
+                  refresh: true,
+                })
+              }
+            }
+            }
             options={[
-              '---------------',
               'Alerts',
               'Articles',
               'Campgrounds',
@@ -70,16 +80,17 @@ class Search extends React.Component {
           <Select
             value={this.state.state}
             onChange={value => {
-              if(value === '--'){
+              if (value === 'ALL') {
                 this.setState({ state: '' });
               }
-              else{
+              else {
                 this.setState({ state: value });
               }
+              this.handleClick.bind(this)
             }}
             options={[
-              '--','AL','AK','AZ','AR','CA','CO','CT','DE','FL','GA','HI','ID','IN','IA','KS','KY','LA','MD','MA','MI','MN','MS','MO','MT',
-              'NE','NV','NH','NJ','NM','NY','NC','ND','OH','OK','PA','RI','SC','SD','TN','TX','UT','VT','VA','WA','WV','WI','WY',
+              'ALL', 'AL', 'AK', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'FL', 'GA', 'HI', 'ID', 'IN', 'IA', 'KS', 'KY', 'LA', 'MD', 'MA', 'MI', 'MN', 'MS', 'MO', 'MT',
+              'NE', 'NV', 'NH', 'NJ', 'NM', 'NY', 'NC', 'ND', 'OH', 'OK', 'PA', 'RI', 'SC', 'SD', 'TN', 'TX', 'UT', 'VT', 'VA', 'WA', 'WV', 'WI', 'WY',
             ]}
           />
         </div>
@@ -98,8 +109,6 @@ class Search extends React.Component {
           {this.state.clicked && <Results search={this.state.search} type={this.state.type} state={this.state.state} refresh={this.state.refresh} />}
 
         </form>
-
-
 
       </div>
     )
