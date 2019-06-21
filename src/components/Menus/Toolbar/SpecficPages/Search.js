@@ -8,27 +8,22 @@ import Select from '../../../../components/Select';
 class Search extends React.Component {
   constructor() {
     super();
-    this.state = { clicked: false, search: '', state: '', type: '', refresh: false };
+    this.state = { clicked: false, search: '', state: '', type: 'Alerts'};
   }
 
   handleSearchChange = (event) => {
     const search = event.target.value
-    this.setState({ search: search })
+    this.setState({ search: search, clicked: false })
   }
 
   handleClick(evt) {
     evt.preventDefault();
 
-    if (this.state.clicked) {
-      this.setState({
-        refresh: true,
-      });
-      console.log('click');
-    }
-
     this.setState({
       clicked: true,
     });
+
+    // console.log("click")
 
   }
 
@@ -54,12 +49,9 @@ class Search extends React.Component {
               else {
                 this.setState({ type: value });
               }
-              if (this.state.clicked) {
-                this.setState({
-                  refresh: true,
-                })
-              }
-            }
+                this.setState({ clicked: false });
+             } 
+
             }
             options={[
               'Alerts',
@@ -69,7 +61,7 @@ class Search extends React.Component {
               'Lesson Plans',
               'News Releases',
               'Parks',
-              'Persons',
+              'People',
               'Places',
               'Visitor Centers'
             ]}
@@ -86,7 +78,8 @@ class Search extends React.Component {
               else {
                 this.setState({ state: value });
               }
-              this.handleClick.bind(this)
+              this.setState({ clicked: false });
+
             }}
             options={[
               'ALL', 'AL', 'AK', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'FL', 'GA', 'HI', 'ID', 'IN', 'IA', 'KS', 'KY', 'LA', 'MD', 'MA', 'MI', 'MN', 'MS', 'MO', 'MT',
@@ -106,12 +99,13 @@ class Search extends React.Component {
             <FontAwesomeIcon size="5x" icon={faSearch} />
           </button>
 
-          {this.state.clicked && <Results search={this.state.search} type={this.state.type} state={this.state.state} refresh={this.state.refresh} />}
+          {this.state.clicked && <Results search={this.state.search} type={this.state.type} state={this.state.state} />}
 
         </form>
 
       </div>
     )
+
   }
 }
 

@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 // import { ConnectedRouter } from 'connected-react-router';
-import Campgrounds from './components/Menus/Toolbar/SpecficPages/ResultPages/Campgrounds';
 // import configureStore, { history } from './store';
 import './index.css';
 import HomePage from './components/HomePage'
@@ -38,7 +37,6 @@ ReactDOM.render(
 
             <Switch>
                 <Route exact path="/" component={HomePage} />
-                <Route path="/Campgrounds" component={Campgrounds} />
             </Switch>
 
     </Router>
