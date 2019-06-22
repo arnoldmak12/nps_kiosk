@@ -1,0 +1,18 @@
+ h2.homeStyleHeader{
+    position: fixed;
+    top: 30%;
+    left: 22%;
+    font-Size: 80px;
+    color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+  }
+
+  h3.homeStyleSubHeaderName{
+    position: fixed;
+    top: 55%;
+    left: 39%;
+    font-Size: 60px;
+    color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
