@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/nps_kiosk/static/css/main.fe1cecdd.chunk.css",
+    "main.js": "/nps_kiosk/static/js/main.b476731e.chunk.js",
+    "main.js.map": "/nps_kiosk/static/js/main.b476731e.chunk.js.map",
+    "runtime~main.js": "/nps_kiosk/static/js/runtime~main.a0f48cd9.js",
+    "runtime~main.js.map": "/nps_kiosk/static/js/runtime~main.a0f48cd9.js.map",
+    "static/js/2.2e7f8965.chunk.js": "/nps_kiosk/static/js/2.2e7f8965.chunk.js",
+    "static/js/2.2e7f8965.chunk.js.map": "/nps_kiosk/static/js/2.2e7f8965.chunk.js.map",
+    "index.html": "/nps_kiosk/index.html",
+    "precache-manifest.07c852a6cd4816d28210c4264ce0a2af.js": "/nps_kiosk/precache-manifest.07c852a6cd4816d28210c4264ce0a2af.js",
+    "service-worker.js": "/nps_kiosk/service-worker.js",
+    "static/css/main.fe1cecdd.chunk.css.map": "/nps_kiosk/static/css/main.fe1cecdd.chunk.css.map",
+    "static/media/desert.jpg": "/nps_kiosk/static/media/desert.31fd68fa.jpg",
+    "static/media/desert2.jpg": "/nps_kiosk/static/media/desert2.03dd0fcb.jpg",
+    "static/media/flowers.jpg": "/nps_kiosk/static/media/flowers.b89785c1.jpg",
+    "static/media/grassField.jpg": "/nps_kiosk/static/media/grassField.d87ed5d2.jpg",
+    "static/media/lake.jpg": "/nps_kiosk/static/media/lake.e7fc24a2.jpg",
+    "static/media/largeLogo.png": "/nps_kiosk/static/media/largeLogo.fc92b655.png",
+    "static/media/moun2.jpg": "/nps_kiosk/static/media/moun2.863d5896.jpg",
+    "static/media/regMoun.jpg": "/nps_kiosk/static/media/regMoun.cd31d1d1.jpg",
+    "static/media/smallLogo.png": "/nps_kiosk/static/media/smallLogo.f37767f8.png",
+    "static/media/snowMoun.jpg": "/nps_kiosk/static/media/snowMoun.ba6c2eb3.jpg"
+  }
+}
