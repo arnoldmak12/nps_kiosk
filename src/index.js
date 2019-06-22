@@ -1,8 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
-// import { ConnectedRouter } from 'connected-react-router';
-// import configureStore, { history } from './store';
 import './index.css';
 import HomePage from './components/HomePage'
 import * as serviceWorker from './serviceWorker';
@@ -18,29 +15,23 @@ import moun2 from './slideShowPics/moun2.jpg';
 import { relative } from "path";
 
 const backgroundStyle = {
-    // width: '100%',
-    // height: '100%',
-    position: relative,
-    zIndex: '-10',
-    marginTop: '-8px',
-  }
+  position: relative,
+  zIndex: '-10',
+  marginTop: '-8px',
+}
 
 ReactDOM.render(
-    
-    <Router>
+  <div>
+    <div style={backgroundStyle}>
+      <BackgroundSlider
+        images={[grassField, regMoun, snowMoun, lake, desert, flowers, moun2, desert2]}
+        duration={12} transition={4} />
+    </div>
 
-            <div style={backgroundStyle}>
-              <BackgroundSlider
-                images={[grassField, regMoun, snowMoun, lake, desert, flowers, moun2, desert2]}
-                duration={12} transition={4} />
-            </div>
+    <HomePage />
+  </div>
 
-            <Switch>
-                <Route exact path="/" component={HomePage} />
-            </Switch>
-
-    </Router>
-    , document.getElementById('root'));
+  , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

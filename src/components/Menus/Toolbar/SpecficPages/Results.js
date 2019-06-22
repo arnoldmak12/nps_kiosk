@@ -1,7 +1,6 @@
 import React from 'react';
 import "./Results.css"
 import ReactLoading from 'react-loading';
-import { withRouter } from 'react-router-dom';
 import GoogleMapReact from 'google-map-react';
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
@@ -534,4 +533,4 @@ class Results extends React.Component {
   }
 }
 
-export default withRouter(Results);
+export default Results;
