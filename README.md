@@ -17,4 +17,5 @@ Simply click the following link: https://arnoldmak12.github.io/nps_kiosk/ and it
 
 ## Author
 Arnold Makarov - Computer Science and Engineering Student at The Ohio State University
+
 Contact At: arnoldmakarov@yahoo.com
