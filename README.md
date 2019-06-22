@@ -9,9 +9,10 @@ Simply click the following link: and it'll take you to the default page. To begi
 - Yarn
 - National Park Service API
 - Google Maps API
+- Google-Map-React
 - Font Awesome
 - React-Background-Slider
-- Google-Map-React
+- Photos From National Park Service Gallary
 
 ## Author
 Arnold Makarov - Computer Science and Engineering Student at The Ohio State University
