@@ -8,7 +8,7 @@ import Select from '../../../../components/Select';
 class Search extends React.Component {
   constructor() {
     super();
-    this.state = { clicked: false, search: '', state: '', type: 'Alerts'};
+    this.state = { clicked: false, search: '', state: '', type: 'Campgrounds'};
   }
 
   handleSearchChange = (event) => {
@@ -37,13 +37,7 @@ class Search extends React.Component {
             className="type-select"
             value={this.state.type}
             onChange={value => {
-              if (value === 'Lesson Plans') {
-                this.setState({ type: 'LessonPlans' });
-              }
-              else if (value === 'News Releases') {
-                this.setState({ type: 'NewsReleases' });
-              }
-              else if (value === 'Visitor Centers') {
+              if (value === 'Visitor Centers') {
                 this.setState({ type: 'VisitorCenters' });
               }
               else {
@@ -54,12 +48,7 @@ class Search extends React.Component {
 
             }
             options={[
-              'Alerts',
-              'Articles',
               'Campgrounds',
-              'Events',
-              'Lesson Plans',
-              'News Releases',
               'Parks',
               'People',
               'Places',

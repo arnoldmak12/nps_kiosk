@@ -22,6 +22,15 @@ li.result-entry {
   margin-right: 50px; 
 }
 
+li.result-entry a{
+  color: white; 
+  text-decoration: none;
+}
+
+li.result-entry a:hover{
+  text-decoration: underline;
+}
+
 li.result-entry-map {
   margin-left: 20px;
   margin-right: 50px; 
@@ -34,6 +43,15 @@ h1.result-name {
   font-size: 42px;
   text-align: center;
   margin-bottom: -10px;
+}
+
+h1.result-name-people {
+  font-size: 42px;
+  text-align: center;
+}
+
+h1.result-name-people:hover {
+  text-decoration: underline;
 }
 
 li.result-entry button{
@@ -59,9 +77,28 @@ h2.result-header {
 h2.result-subheader {
   font-size: 36px;
   /* text-decoration: underline; */
+  
 }
 
 p.result-description {
   margin-top: -15px;
   font-size: 23px;
+}
+
+p.result-description img{
+  padding: 10px;
+  float: right;
+  width: 20%;
+  height: auto;
+}
+
+p.result-description-time-date {
+  margin-top: -15px;
+  font-size: 23px;
+  /* float: right; */
+}
+
+span.result-description-time-date-bold {
+  font-size: 23px;
+  font-weight: bold;
 }
