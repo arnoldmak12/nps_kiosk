@@ -17,7 +17,7 @@ class Toolbar extends React.Component {
     super();
     this.state = {
       isMini: true,
-      activeSidebar: "",
+      activeSidebar: "Home",
       inSearch: false,
     };
   }
@@ -99,7 +99,7 @@ class Toolbar extends React.Component {
         </header>
       );
     } else {
-      return <div />;
+      return <Home />;
     }
   }
 }
