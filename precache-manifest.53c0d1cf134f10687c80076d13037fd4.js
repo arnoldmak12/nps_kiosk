@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4c779e314bb8bef3680ccea95be0c56e",
+    "revision": "40fa872a737223fcc27aa9742f1c2a65",
     "url": "/nps_kiosk/index.html"
   },
   {
-    "revision": "6a4cecc642ca31160cf4",
-    "url": "/nps_kiosk/static/css/main.5ab196e3.chunk.css"
+    "revision": "cc4cf3d0d030c8af3ae0",
+    "url": "/nps_kiosk/static/css/main.dde0b93a.chunk.css"
   },
   {
-    "revision": "53c1de85b0612f98e51d",
-    "url": "/nps_kiosk/static/js/2.c1f8ed7a.chunk.js"
+    "revision": "3d449fe3eed6db834466",
+    "url": "/nps_kiosk/static/js/2.195ec17d.chunk.js"
   },
   {
-    "revision": "6a4cecc642ca31160cf4",
-    "url": "/nps_kiosk/static/js/main.740278aa.chunk.js"
+    "revision": "cc4cf3d0d030c8af3ae0",
+    "url": "/nps_kiosk/static/js/main.dba8c086.chunk.js"
   },
   {
     "revision": "7bec110cca362e472aad",
@@ -48,8 +48,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/nps_kiosk/static/media/moun2.863d5896.jpg"
   },
   {
+    "revision": "522fbae632e04302136fe8f13910c2a8",
+    "url": "/nps_kiosk/static/media/night2.522fbae6.jpg"
+  },
+  {
+    "revision": "36bfc33901bf259d98136110d1241bce",
+    "url": "/nps_kiosk/static/media/night3.36bfc339.jpg"
+  },
+  {
     "revision": "cd31d1d17d6928b18fa78f9e60de5e7d",
     "url": "/nps_kiosk/static/media/regMoun.cd31d1d1.jpg"
+  },
+  {
+    "revision": "41bf48dbd7e24eb6d8055be3214618d4",
+    "url": "/nps_kiosk/static/media/sand.41bf48db.jpg"
   },
   {
     "revision": "f37767f8b0ee741b0a878b31503c0de3",
