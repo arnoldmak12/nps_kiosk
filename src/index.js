@@ -12,6 +12,9 @@ import desert2 from './slideShowPics/desert2.jpg';
 import flowers from './slideShowPics/flowers.jpg';
 import lake from './slideShowPics/lake.jpg';
 import moun2 from './slideShowPics/moun2.jpg';
+import night from './slideShowPics/night2.jpg';
+import night2 from './slideShowPics/night3.jpg';
+import sand from './slideShowPics/sand.jpg';
 import { relative } from "path";
 
 const backgroundStyle = {
@@ -24,7 +27,7 @@ ReactDOM.render(
   <div>
     <div style={backgroundStyle}>
       <BackgroundSlider
-        images={[grassField, regMoun, snowMoun, lake, desert, flowers, moun2, desert2]}
+        images={[sand, night, desert2, snowMoun, night2, grassField, regMoun,  lake,  desert, flowers, moun2]}
         duration={12} transition={4} />
     </div>
 

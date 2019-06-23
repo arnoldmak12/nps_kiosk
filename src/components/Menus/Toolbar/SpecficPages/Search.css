@@ -43,7 +43,6 @@ input.search-input {
     border: 1.5px solid white;
 }
 
-
 input.search-input::placeholder {
     color: white;
 }
