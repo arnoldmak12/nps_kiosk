@@ -24,7 +24,7 @@
     "react-bootstrap": "^1.0.0-beta.9",
     "react-dom": "^16.8.6",
     "react-loading": "^2.0.3",
-    "react-scripts": "3.0.1",
+    "react-scripts": "5.0.1",
     "react-slideshow-image": "^1.1.8"
   },
   "scripts": {
